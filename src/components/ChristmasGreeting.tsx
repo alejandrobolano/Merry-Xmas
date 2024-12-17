@@ -7,6 +7,11 @@ interface ChristmasGreetingProps {
 }
 
 export const ChristmasGreeting: React.FC<ChristmasGreetingProps> = ({ name, author }) => {
+  const capitalizeFirstLetter = (str: string): string => {
+    if (!str) return "";
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  };
+
   return (
     <div className="text-center">
       <div className="flex justify-center items-center gap-4 mb-8">
@@ -18,7 +23,7 @@ export const ChristmasGreeting: React.FC<ChristmasGreetingProps> = ({ name, auth
         ¡Feliz Navidad!
       </h1>
       <p className="text-2xl md:text-4xl text-green-700 mb-8">
-        {name?.toLocaleUpperCase()}
+        {capitalizeFirstLetter(name)}
       </p>
       <div className="space-y-4 text-lg md:text-xl text-gray-700 max-w-2xl mx-auto">
         <strong>
@@ -29,7 +34,7 @@ export const ChristmasGreeting: React.FC<ChristmasGreetingProps> = ({ name, auth
           Espero que este tiempo festivo te traiga paz, prosperidad y muchas sonrisas.
         </p>
         <p className="text-xl md:text-2xl font-semibold mt-6 text-red-600">
-          Con cariño, {author}
+          Con cariño, {capitalizeFirstLetter(author)}
         </p>
       </div>
     </div>
