@@ -19,13 +19,13 @@
 
 @keyframes fly-santa {
   0% {
-    transform: translateX(-100%) rotate(5deg);
+    transform: translateX(100vw) rotate(-5deg);
   }
   50% {
-    transform: translateX(50vw) rotate(-5deg);
+    transform: translateX(50vw) rotate(5deg);
   }
   100% {
-    transform: translateX(calc(100vw + 100%)) rotate(5deg);
+    transform: translateX(-100%) rotate(-5deg);
   }
 }
 
@@ -46,14 +46,13 @@
   animation: bounce-slight 2s ease-in-out infinite;
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 640px) {
   .animate-fall {
     font-size: 1.25rem;
   }
 }
 
-/* Improved container responsiveness */
 .container {
   width: 100%;
   margin-left: auto;
