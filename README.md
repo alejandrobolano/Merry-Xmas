@@ -7,11 +7,17 @@ El código es simple y es creado con Vite + React + TS + Tailwind CSS
 Este es el sitio web: [Feliz Navidad](https://unafeliznavidad.vercel.app) y es fácil de adaptarlo para poder regalarle una **Feliz Navidad** a cualquier persona.
 
 ## Cambios para adaptar el contenido
-Solamente debes cambiar/agregar en la URL algunos parámetros:
-* ```n``` o ```name```: para poner la persona que lo va a recibir. En caso de no ponerlo automáticamente se pondrá la palabra *"Amig@"*
-* ```a``` o ```author```: se debe cambiar porque por defecto las felicitaciones la recibirá de mí 😂
+Hay dos opciones:
 
-### Ejemplo 
+### Fácil
+1- Hay un formulario en la página principal donde deberás poner el nombre del destinatario y el nombre de quién lo manda, igual se puede cambiar por cualquier texto como: "Tu mejor amigo", "Tu amor". Luego pinchará en el botón de compartir y se copiará el enlace generado.
+
+### Más Complejo
+2- Debes cambiar/agregar en la URL algunos parámetros:
+* ```n``` o ```name```: para poner la persona que lo va a recibir. En caso de no ponerlo automáticamente se pondrá la palabra *"Amig@"*
+* ```a``` o ```author```: se debe cambiar porque por defecto pondrá Anónimo
+
+#### Ejemplo 
  
 * ```https://unafeliznavidad.vercel.app?n=amigo%20especial&a=autor%20especial```
 * ```https://unafeliznavidad.vercel.app?name=amigo%20especial&author=autor%20especial```
